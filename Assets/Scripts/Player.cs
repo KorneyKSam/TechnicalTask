@@ -11,17 +11,10 @@ public class Player : MonoBehaviour
 
     private Vector3 _targetPosition;
     private float _timeElapsed;
-    private Rigidbody _rigidbody;
 
     private void Start()
     {
         _targetPosition = transform.position;
-
-        _rigidbody = GetComponentInChildren<Rigidbody>();
-        if (_rigidbody == null)
-        {
-            throw new NullReferenceException("Player child doesn't have a Rigidbody!");
-        }
     }
 
     private void FixedUpdate()

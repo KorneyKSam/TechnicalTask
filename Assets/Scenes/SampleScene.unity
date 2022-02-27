@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 276526394}
   - component: {fileID: 276526395}
+  - component: {fileID: 276526397}
+  - component: {fileID: 276526398}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -164,9 +166,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276526393}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21554bc404ee99d499067f7ba94498c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &276526397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276526393}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61141a8b331c404e92d9186e145c110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &276526398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276526393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6fa97c23a5eba468730500375dcf75, type: 3}
+  m_Script: {fileID: 11500000, guid: b11af4c243898674692173097d545dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &314119086
@@ -246,32 +272,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534879f37df809548b749abfb1385b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerTransform: {fileID: 2062151815}
+  _laneOffset: 6
   _curve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: -0.15000096
+      value: 0.15093303
+      inSlope: -1.8693745
+      outSlope: -1.8693745
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.42458153
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.9791565
+      value: 0.9481125
+      inSlope: -2.0247726
+      outSlope: -2.0247726
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.1918747
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 0.5
-  _playerTransform: {fileID: 2062151815}
+  _lerpDuration: 0.5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace EventSystem
 {
     public static class Events
