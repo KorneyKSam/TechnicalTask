@@ -1,18 +1,12 @@
 using EventSystem;
 using UnityEngine;
 
-public class SwipeControl : MonoBehaviour
+public class SwipeControl : BaseControl
 {
     private Vector2 _tapPosition;
     private Vector2 _swipeDelta;
     private bool _isSwiping;
-    private bool _isMobile;
     private float _deadZone = 80f;
-
-    void Start()
-    {
-        _isMobile = Application.isMobilePlatform;
-    }
 
     void Update()
     {

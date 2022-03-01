@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace EventSystem
 {
-    public class EventWithParameter<T> : MonoBehaviour
+    public class EventWithParameter<T>
     {
         private event Action<T> _action = delegate { };
         public void Invoke(T param) { _action.Invoke(param); }

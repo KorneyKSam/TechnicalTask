@@ -1,15 +1,8 @@
 using EventSystem;
 using UnityEngine;
 
-public class ButtonControl : MonoBehaviour
+public class ButtonControl : BaseControl
 {
-    private bool _isMobile;
-
-    void Start()
-    {
-        _isMobile = Application.isMobilePlatform;
-    }
-
     void Update()
     {
         if (!_isMobile)
